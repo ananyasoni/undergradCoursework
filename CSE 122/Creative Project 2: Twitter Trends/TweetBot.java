@@ -2,7 +2,6 @@
 // 11/11/2023
 // CSE 122 
 // C2: Twitter Trends
-// TA: Kevin
 // This class reads in and manages the state of tweets. Users can access 
 // tweets one by one, get a count of the total number of tweets that currently exist
 // add a tweet, remove a specified tweet, and reset to read tweets from the
