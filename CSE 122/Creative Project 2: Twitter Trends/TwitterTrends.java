@@ -2,7 +2,6 @@
 // 11/11/2023
 // CSE 122 
 // C2: Twitter Trends
-// TA: Kevin
 // This class analyzes the tweets in a TweetBot. Users can 
 // get information on the most frequent word that appears
 // in the list of tweets contained by the TweetBot as well as the 
