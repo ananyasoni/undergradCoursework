@@ -2,7 +2,6 @@
 // 10/26/2023
 // CSE 122 
 // C1: General Image Manipulation
-// TA: Kevin
 // This class applies filters to an image and produces 4 pictures 
 // with those filters that make the original image appear more purple, make the 
 // image appear grainy, make specified rectangular portions of the image appear grainy
