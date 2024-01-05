@@ -1,5 +1,6 @@
 # coursework
 UW CS Undergraduate Coursework
-  Courses:
+
+Courses:
     - CSE 122 (Intro to Computer Science II)
 
