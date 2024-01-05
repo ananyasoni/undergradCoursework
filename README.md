@@ -1,5 +1,5 @@
 # coursework
-UW CS Undergraduate Coursework
+UW CS Undergraduate Computer Science Coursework
 
 Courses:
 
