@@ -2,7 +2,6 @@
 // 10/19/2023
 // CSE 122 
 // P1: Music Playlist
-// TA: Kevin
 // This class allows a user to create a functioning Music Playlist. A user can add songs to the
 // Music Playlist, play a song, print history of songs played, clear history of songs played, 
 // delete songs from recent history or beginning of history, and end the program by entering
