@@ -2,7 +2,6 @@
 // 11/16/2023
 // CSE 122 
 // P2: Absurdle
-// TA: Kevin
 // This class allows a user to play a game called Absurdle, a variant of Wordle,
 // where a user keeps guessing the target word until they are successful. 
 // This program gives the impression of picking a single target word, 
