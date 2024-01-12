@@ -16,9 +16,11 @@ def sum_evens(nums):
     Returns: a integer representing the sum of the even numbers in the list
     '''
     # your solution code should start here
-    # create a variable that keeps track of the sum
-    # for each number in the list check if number % 2 == 0
-    # and if so add it to the sum
+    sum = 0
+    for num in nums:
+        if num % 2 == 0:
+            sum += num
+    return sum
 
 
 assert sum_evens([5, 2, 6, 3, 4]) == 12
@@ -45,6 +47,10 @@ def hidden_char(input_str, hidden_char):
     Returns: A boolean representing whether or not hidden_char is in input_str
     '''
     # your solution code should start here
+    for char in input_str:
+        if char == hidden_char:
+            return True
+    return False
 
 
 assert hidden_char('cse160', 's') is True
@@ -70,6 +76,11 @@ def count_num(nums, find_num):
         A integer representing the number of times find_num appears in nums
     '''
     # your solution code should start here
+    numMatch = 0
+    for nextNum in nums:
+        if nextNum == find_num:
+            numMatch += 1
+    return numMatch
 
 
 assert count_num([1, 5, 6, 2, 1], 1) == 2
