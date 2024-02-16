@@ -1,6 +1,4 @@
 import os
-
-# YOU DO NOT NEED TO CHANGE ANYTHING IN THIS FILE
 data_path = "data"
 try:
     assert os.path.exists(data_path), "Data folder does not exist!"
