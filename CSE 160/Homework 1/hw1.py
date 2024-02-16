@@ -6,7 +6,6 @@
 *Description:
 """
 
-# Uncomment the line below to make the math.sqrt function available
 import math
 
 # Problem 1
@@ -39,8 +38,6 @@ print()
 # prints triangular number for n
 print("Problem 3 solution follows:")
 
-# Provided partially-working solution to problem 3
-# `...` are placeholders and should be replaced
 n = 10
 triangular = 0
 for i in range(1, n + 1):
