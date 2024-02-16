@@ -3,12 +3,7 @@
 # Homework 2: DNA analysis
 
 # This program reads in DNA sequencer output and computes statistics, such as
-# the GC content, AT content, nucleotide counts, etc.  Run it from the command
-# line like this:
-#   python dna_analysis.py myfile.fastq
-#
-# For teaching purposes, a few more comments than normal have been added in
-# to explain in detail what some Python constructs are doing.
+# the GC content, AT content, nucleotide counts, etc.
 
 # The sys module supports reading files, command-line arguments, etc.
 import sys
@@ -100,8 +95,6 @@ nucleotides = filename_to_string(file_name)
 # Compute statistics
 ###
 
-# YOUR CODE GOES BELOW THIS POINT
-
 # Total nucleotides seen so far.
 total_count = 0
 
@@ -143,8 +136,3 @@ print('Length of nucleotides:', len_nuc)
 print('AT/GC Ratio:', at_gc_ratio)
 print('GC Classification:', classification + " GC content")
 print('Is suitable for nanotech:', str(nano_suitable(gc_content)))
-# You can add more assertions here to check properties that you think
-# should be true about your results. If the condition listed is false,
-# then the given message will be printed.
-# assert total_count == len(nucleotides), "total_count != length of
-# nucleotides"
