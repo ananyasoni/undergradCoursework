@@ -15,7 +15,6 @@ def sum_evens(nums):
 
     Returns: a integer representing the sum of the even numbers in the list
     '''
-    # your solution code should start here
     sum = 0
     for num in nums:
         if num % 2 == 0:
@@ -46,7 +45,7 @@ def hidden_char(input_str, hidden_char):
 
     Returns: A boolean representing whether or not hidden_char is in input_str
     '''
-    # your solution code should start here
+
     for char in input_str:
         if char == hidden_char:
             return True
@@ -75,7 +74,7 @@ def count_num(nums, find_num):
     Returns:
         A integer representing the number of times find_num appears in nums
     '''
-    # your solution code should start here
+
     numMatch = 0
     for nextNum in nums:
         if nextNum == find_num:
