@@ -1,0 +1,49 @@
+Ananya Soni
+CSE 160
+Homework 2
+
+Problem 1: GC-content: 0.43059987061138255
+
+Problem 2:
+When I removed the gc_count = 0 line I got an error. This is because the variable isn't defined
+and we try to increase its value to one. We must first initialize the variable to use it.
+
+When I remove the initializing nucleotides I get the same error again because my program tries to use 
+nucleotides without it ever being declared and initialized. 
+
+Problem 3:
+GC-content: 0.43059987061138255
+AT-content: 0.5694001293886175
+
+Problem 4:
+G count: 5738773
+C count: 5879128
+A count: 7701287
+T count: 7661547
+
+Problem 5:
+The sample_1, sample_2, sample_3, sample_4, sample_5, 
+test-high-gc-1.fastq, test-high-gc-2.fastq, test-moderate-gc-1.fastq, 
+test-moderate-gc-2.fastq all produce a different output for sum from
+total count and length of nucleotides. Something to note is that the sum
+is always smaller than the length and total. This is because some of the nucleotides 
+have junk characters like N which is NOT a nucleotide. So we should only be increasing
+our total count when we see either A, C, G, or T. Or we sould use sum of 
+the nucleotides to calculate content. My previous answers to problems 2 and 0
+are incorrect because the denominater included the count of non-nucleotide characters.
+
+
+Problem 6:
+AT/GC Ratio: 1.3223416174746196
+
+Problem 7:
+GC Classification: moderate GC Content
+
+Problem 8:
+
+Is suitable for nanotech: False
+
+
+Collaboration:
+N/A
+
