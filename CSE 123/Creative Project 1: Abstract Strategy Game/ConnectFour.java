@@ -2,7 +2,6 @@
 // 01/28/2024
 // CSE 123
 // C1: Abstract Startegy Game 
-// TA: Lainey
 // This class represents a game of connect four that implements the 
 // AbstractStrategyGame interface. A user can play a game of connect
 // four using this class.
