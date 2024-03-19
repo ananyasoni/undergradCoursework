@@ -2,7 +2,6 @@
 // 03/06/2024
 // CSE 123
 // C3: BrettFeed Quiz
-// TA: Lainey
 // This class represents a buzz-feed style quiz. This class 
 // allows a user to create a quiz from a file, take this quiz, 
 // export this quiz to a file, add a question to this quiz, 
