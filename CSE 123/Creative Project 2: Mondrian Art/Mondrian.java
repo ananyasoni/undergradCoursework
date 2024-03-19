@@ -2,7 +2,6 @@
 // 02/14/2024
 // CSE 123
 // C2: Mondrian Art
-// TA: Lainey
 // This class represents a Mondrian style art piece.
 // It allows the user to create an image of a Basic Modrian art 
 // piece or a Complex Mondrian art piece. 
