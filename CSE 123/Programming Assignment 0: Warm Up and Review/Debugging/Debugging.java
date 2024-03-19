@@ -2,7 +2,6 @@
 // 01/10/2024
 // CSE 123
 // P0: Warmup/Review
-// TA: Lainey
 import java.util.*;
 
 public class Debugging {
