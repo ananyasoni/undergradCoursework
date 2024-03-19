@@ -2,7 +2,6 @@
 // 01/19/2024
 // CSE 123
 // C0: Cipher
-// TA: Lainey
 // This class represents a Multi Cipher. It allows the user 
 // to provide multiple Cipher's and an input and encrypt that input using 
 // the provided Ciphers. The input is then processed in order through 
