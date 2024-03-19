@@ -2,7 +2,6 @@
 // 01/19/2024
 // CSE 123
 // C0: Cipher
-// TA: Lainey
 // This class represents a Caesar Key cipher . It allows the user 
 // to input a String and encrypt that String using a Caesar Key cipher
 // where each character in the input is shiften by the given amount.
