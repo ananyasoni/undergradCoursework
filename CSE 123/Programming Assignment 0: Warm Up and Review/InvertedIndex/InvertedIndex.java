@@ -2,7 +2,6 @@
 // 01/10/2024
 // CSE 123
 // P0: Warmup/Review
-// TA: Lainey
 // This class allows a user to create a list of documents and create an 
 // inverted index for that list of documents 
 import java.util.*;
