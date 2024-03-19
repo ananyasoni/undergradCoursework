@@ -2,7 +2,6 @@
 // 01/10/2024
 // CSE 123
 // P0: Warmup/Review
-// TA: Lainey
 // This class represents a Book and allows a user
 // to add a rating to a Book, see the authors of a 
 // Book, get the title of a Book, get the number 
