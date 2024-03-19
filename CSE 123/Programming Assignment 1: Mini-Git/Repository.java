@@ -2,7 +2,6 @@
 // 02/07/2024
 // CSE 123
 // P1: Mini-Git
-// TA: Lainey
 // This class represents a Repository and allows users
 // to track changes they have made. A user can create a 
 // Repository, create a commit within their Repository, 
