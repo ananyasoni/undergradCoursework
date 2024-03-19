@@ -2,7 +2,6 @@
 // 03/04/2024
 // CSE 123
 // P3: Huffman
-// TA: Lainey
 // This class represents a Huffman Code and allows a user
 // to create a Huffman Code for a file of text, save this
 // Huffman Code into a new file, and translate a compressed file 
