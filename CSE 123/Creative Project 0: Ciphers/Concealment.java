@@ -2,7 +2,6 @@
 // 01/19/2024
 // CSE 123
 // C0: Cipher
-// TA: Lainey
 // This class represents a Concealment Cipher. It allows the user 
 // to provide an input and filler value and encrypt that input using the concealment cipher. 
 // Each character in the provided input is then preceded by a filler amount of junk characters
