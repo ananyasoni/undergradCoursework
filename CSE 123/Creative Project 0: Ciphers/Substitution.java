@@ -2,7 +2,6 @@
 // 01/19/2024
 // CSE 123
 // C0: Cipher
-// TA: Lainey
 // This class represents a Substitution Cipher. It allows the user 
 // to provide an input and encrypt that input using a substitution cipher
 // where each character in the input is replaced by each unique character in
