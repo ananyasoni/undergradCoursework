@@ -2,7 +2,6 @@
 // 02/21/2024
 // CSE 123
 // P2: Disaster Relief
-// TA: Lainey
 // This class allows a user to find all possible allocations 
 // based on the budget and the locations in need of help  
 // as well as the most strategic allocation of resources to save 
