@@ -1,0 +1,23 @@
+Name: Ananya Shreya Soni
+CSE 160
+Homework 6
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+Answer to Problem 6:
+
+9645 of the random MSEs were smaller than the Iranian election MSE 
+and 355 were larger or equal. This means that only about 3.55% of 
+genuine elections would be as different from the uniform distribution as the 
+Iranian election was. Given that, it is highly unlikely that the Iranian election 
+was genuine, we are appoximately 96.45% confident that the data is fraudulent and we
+can reject the null hypothesis.
+The 2009 Iranian election null hypothesis rejection level is 0.0355 which is less
+than 0.05.
+
+Collaboration:
+
+N/A
+
