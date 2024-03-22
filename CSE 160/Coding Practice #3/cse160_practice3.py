@@ -1,7 +1,6 @@
 # Ananya Shreya Soni
 # CSE 160
 # Autumn 2023
-# Checkin 3
 
 
 # Problem 1
@@ -42,7 +41,6 @@ def get_last_pixel(pixel_grid):
 
     Returns: An integer representing the last int in the pixel_grid
     '''
-    # your solution code should start here
     return pixel_grid[len(pixel_grid) - 1][len(pixel_grid[0]) - 1]
 
 
@@ -66,7 +64,6 @@ def sum_grid(pixel_grid):
 
     Returns: An integer representing the sum of values in pixel_grid
     '''
-    # your solution code should start here
     sum = 0
     for row in pixel_grid:
         for col in row:
