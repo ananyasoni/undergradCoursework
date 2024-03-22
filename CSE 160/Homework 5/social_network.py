@@ -7,11 +7,6 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from operator import itemgetter
 
-###
-#  Problem 1a
-###
-
-
 def get_practice_graph():
     """Builds and returns the practice graph
     """
@@ -24,8 +19,6 @@ def get_practice_graph():
     practice_graph.add_edge("D", "C")
     practice_graph.add_edge("C", "F")
     practice_graph.add_edge("D", "E")
-    # (Your code for Problem 1a goes here.)
-
     return practice_graph
 
 
@@ -34,11 +27,6 @@ def draw_practice_graph(graph):
     """
     nx.draw_networkx(graph)
     plt.show()
-
-
-###
-#  Problem 1b
-###
 
 def get_romeo_and_juliet_graph():
     """Builds and returns the romeo and juliet graph
@@ -65,22 +53,16 @@ def get_romeo_and_juliet_graph():
 
 
 def draw_rj(graph):
-    """Draw the rj graph to the screen and to a file.
+    """Draws the rj graph to the screen and to a file.
     """
     nx.draw_networkx(graph)
     plt.savefig("romeo-and-juliet.pdf")
     plt.show()
 
 
-###
-#  Problem 2
-###
-
 def friends(graph, user):
     """Returns a set of the friends of the given user, in the given graph.
     """
-    # This function has already been implemented for you.
-    # You do not need to add any more code to this (short!) function.
     return set(graph.neighbors(user))
 
 
@@ -166,7 +148,7 @@ def num_common_friends_map(graph, user):
         # if count is at least one add friend as key to map and value as count
         if num_friends_common >= 1:
             num_common_friends[next_friend] = num_friends_common
-        # reset the count to 0 num_friends_common = 0
+        # reset the count to 0 --> num_friends_common = 0
         num_friends_common = 0
     return num_common_friends
 
@@ -215,10 +197,6 @@ def recs_by_common_friends(graph, user):
     return num_map_to_sorted_list(common_friends_map)
 
 
-###
-#  Problem 3
-###
-
 def influence_map(graph, user):
     """Returns a map (a dictionary) mapping from each person to their
     influence score, with respect to the given user. The map only
@@ -258,10 +236,6 @@ def recommend_by_influence(graph, user):
     return num_map_to_sorted_list(influence_dict)
 
 
-###
-#  Problem 5
-###
-
 def get_facebook_graph(filename):
     """Builds and returns the facebook graph
     Arguments:
@@ -295,19 +269,9 @@ def get_facebook_graph(filename):
 
 def main():
     # practice_graph = get_practice_graph()
-    # Make sure to comment out this line after you have visually verified
-    # your practice graph. Otherwise, the picture will pop up every time
-    # that you run your program.
     # draw_practice_graph(practice_graph)
-
-    # Make sure to comment out this line after you have visually verified
-    # your rj graph and created your PDF file. Otherwise, the picture will
-    # pop up every time that you run your program.
     rj = get_romeo_and_juliet_graph()
     draw_rj(rj)
-    ###
-    #  Problem 4
-    ###
     unchanged_list = []
     changed_list = []
     for character in rj.nodes():
@@ -324,21 +288,13 @@ def main():
     print()
     print("Unchanged Recommendations:", sorted(unchanged_list))
     print("Changed Recommendations:", sorted(changed_list))
-
-    ###
-    #  Problem 5
-    ###
-
-    # (replace this filename with "facebook-links-small.txt" for testing)
     # fb_filename = "facebook-links.txt"
     fb_filename = "facebook-links-small.txt"
     facebook = get_facebook_graph(fb_filename)
-    # (Make sure to call get_facebook_graph)
+    # call get_facebook_graph:
     # test_get_facebook_graph(facebook, fb_filename)
 
-    ###
-    #  Problem 6
-    ###
+    
     print()
     print("Problem 6:")
     print()
@@ -362,7 +318,7 @@ def main():
     for user in users_with_multiple_1000_id:
         first_rec = recs_by_common_friends(facebook, user)
         sec_rec = recommend_by_influence(facebook, user)
-        # print the recommendations by number of common friends
+        # print the top 10 recommendations by number of common friends
         print(str(user) + " (by num_common_friends): " + str(first_rec[0:10]))
         # both approaches give the same recommendation
         if (first_rec == sec_rec):
@@ -371,20 +327,16 @@ def main():
         else:
             changed_list.append(user)
 
-    ###
-    #  Problem 7
-    ###
+
     print()
     print("Problem 7:")
     print()
     for next_user in users_with_multiple_1000_id:
         recs = recommend_by_influence(facebook, next_user)
-        # print the recommendations by influence
+        # print the top 10 recommendations by influence
         print(str(next_user) + " (by influence): " + str(recs[0:10]))
 
-    ###
-    #  Problem 8
-    ###
+
     print()
     print("Problem 8:")
     print()
