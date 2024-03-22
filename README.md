@@ -1,9 +1,9 @@
 # coursework
+
 UW CS Undergraduate Computer Science Coursework
 
 [![](https://tokei.rs/b1/github/ananyasoni/undergradCoursework?category=code)](https://github.com/ananyasoni/undergradCoursework)
 ## Courses:
-
 - CSE 311 (Foundations of Computing I) (Latex)
 - CSE 331 (Software Design and Implementation)
 - CSE 154 (Web Programming) (HTML, CSS, JavaScript)
