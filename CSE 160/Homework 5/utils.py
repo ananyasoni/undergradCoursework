@@ -20,11 +20,6 @@ def check_approx_equals(expected, received):
 
     Returns: True if the received match the expected, False otherwise
     """
-
-    #######################################################
-    # You do not need to change anything in this function #
-    #######################################################
-
     try:
         if type(expected) is dict:
             # first check that keys match, then check that the
@@ -51,10 +46,5 @@ def assert_equals(expected, received):
         expected: the expected value
         received: the received value
     """
-
-    #######################################################
-    # You do not need to change anything in this function #
-    #######################################################
-
     assert check_approx_equals(expected, received), \
         f'Failed: Expected {expected}, but received {received}'
