@@ -17,7 +17,3 @@ can reject the null hypothesis.
 The 2009 Iranian election null hypothesis rejection level is 0.0355 which is less
 than 0.05.
 
-Collaboration:
-
-N/A
-
