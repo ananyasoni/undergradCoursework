@@ -1,8 +1,6 @@
 # Ananya Shreya Soni
 # CSE 160
 # Autumn 2023
-# Checkin 2
-
 
 # Problem 1
 def squirrel_play(temp, is_summer):
