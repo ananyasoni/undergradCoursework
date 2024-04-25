@@ -1,0 +1,137 @@
+/*
+  Ananya Shreya Soni
+  March 29th, 2024
+  Section AC TA: Ramus
+
+  This file respresents the styling decisions for
+  my website. It is used for my resume page and
+  about me page. The color-theme is shades of purple.
+*/
+body {
+  background-color: rgb(251, 240, 255);
+  font-family: "Helvetica", sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+
+p {
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-size: 15pt;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header, .button, .button_hover #banner, figcaption {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+header > h1 {
+  color: rgb(91, 18, 109);
+  text-decoration: underline;
+}
+
+main > section {
+  background-color: #e5d7f6;
+  padding: 10px;
+  border-radius: 15px;
+  white-space: break-space;
+}
+
+#banner {
+  padding: 20px;
+  background-color: #c09de5;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  height: 330px;
+  border: 5px solid;
+  border-color: rgb(155, 56, 180);
+}
+
+#waka {
+  transform: translate(0, 6%);
+}
+
+#stats1, #stats2, #stats3, #stats4, #stats5, #wakatime, .button, .button_hover {
+  display: inline-block;
+}
+
+#wakatime, .button {
+  background-color: #714ba2;
+}
+
+.button {
+  color: rgb(255, 255, 255);
+}
+
+#wakatime, .image {
+  padding: 6px;
+}
+
+#wakatime {
+  background-position-y: center;
+}
+
+.button, .button_hover {
+  text-decoration: none;
+  padding: 9px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  background-position-y: top;
+}
+
+.button_hover {
+  background-color: #C1E1C1;
+  color: rgb(0, 0, 0);
+}
+
+#stats1 {
+  height: 400px;
+  width: 380px;
+}
+
+#stats2 {
+  width: 500px;
+  height: 150px;
+}
+
+#stats3 {
+  margin-left: 2%;
+  padding: 7px;
+}
+
+#stats3, #wakatime, .button, .button_hover {
+  border-radius: 4px;
+}
+
+#stats4 {
+  width: 48%;
+}
+
+#stats5 {
+  width: 60%;
+}
+
+#stats1, #stats2, #stats3, #stats4, #stats5 {
+  border: none;
+  background-color: #d5baf893;
+}
+
+#stats1, #stats2, #stats4, #stats5, .image {
+  border-radius: 8px;
+  margin-left: 0%;
+}
+
+figcaption {
+  font-weight: 545;
+  font-size: 10pt;
+  line-height: 200%;
+}
