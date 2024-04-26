@@ -147,12 +147,6 @@
   function advanceTimer() {
     remainingSeconds -= 1;
     displayTime();
-
-    /**
-     * NOTE: ALWAYS make sure to check whether the amount of time remaining
-     * has reached 0 right after decrementing the time. Otherwise another
-     * second passes due to the 1000 MS interval before the current game stops
-     */
     if (remainingSeconds === 0) {
       clearInterval(timerId);
       displayTime();
