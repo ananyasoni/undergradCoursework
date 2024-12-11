@@ -1,0 +1,14 @@
+{
+  "todos": [
+    {
+      "todo-input": "Write Email",
+      "minutes": "20",
+      "completed": false
+    },
+    {
+      "todo-input": "Make Pasta",
+      "minutes": "30",
+      "completed": false
+    }
+  ]
+}
