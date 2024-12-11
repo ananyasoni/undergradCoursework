@@ -1,0 +1,96 @@
+/*
+  COMPLETED SET.CSS FOR CSE154 HW2
+  DO NOT MODIFY THIS FILE
+  MODIFICATIONS MAKE YOU INELIGIBLE FOR FULL CREDIT
+ */
+
+body, button, select, input {
+  font-family: "Helvetica", "Verdana", sans-serif;
+  text-align: center;
+  font-size: 12pt;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+button, select {
+  padding: 8px;
+  background-color: white;
+  border: 2pt solid black;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+#start-btn {
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#menu-view > article {
+  background-color: #6F77ED;
+  border-radius: 0.35em;
+  border: 5pt solid black;
+}
+
+#menu-view > article, #details-bar {
+  color: white;
+}
+
+.card, #details-bar, #board {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card, #details-bar {
+  align-items: center;
+}
+
+#details-bar {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  background-color: black;
+  font-size: 14pt;
+}
+
+.card {
+  width: 220px;
+  height: 95px;
+  border: 0.35em solid black;
+  border-radius: 1em;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.card img {
+  height: 85%;
+}
+
+.card p {
+  font-weight: bold;
+}
+
+h2, .card p {
+  font-size: 16pt;
+}
+
+.selected {
+  box-shadow: #636363 6px 6px;
+}
+
+#board {
+  border-right: black solid 5pt;
+  border-left: black solid 5pt;
+  border-bottom: black solid 5pt;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.hidden, .hide-imgs > img {
+  display: none;
+}
