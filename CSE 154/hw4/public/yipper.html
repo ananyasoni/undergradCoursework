@@ -1,0 +1,54 @@
+<!--
+  hw4 yipper - html
+  do not modify this file
+-->
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Yipper</title>
+    <link href='https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='yipper.css'>
+    <script src='yipper.js'></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src='img/pawprint.png' alt='pawprint'>
+        <h1>yipper</h1>
+      </div>
+      <nav>
+        <input id='search-term' type='text'>
+        <button id='search-btn' disabled>search</button>
+        <button id='home-btn'>home</button>
+        <button id='yip-btn'>yip</button>
+      </nav>
+    </header>
+    <main>
+      <article id='yipper-data'>
+        <!-- home view -->
+        <section id='home'>
+        </section>
+
+        <!-- user view -->
+        <section id='user' class='hidden'>
+        </section>
+
+        <!-- new yip view -->
+        <section id='new' class='hidden'>
+          <h2>Share what's on your mind:</h2>
+          <form>
+            <label for='name'>Name</label>
+            <input type='text' id='name' name='name' required>
+            <label for='yip'>What's on your mind?</label>
+            <input type='text' id='yip' name='full' required>
+            <button>Submit!</button>
+          </form>
+        </section>
+      </article>
+
+      <!-- error view -->
+      <h2 id='error' class='hidden'>A cat must have invaded our site, please try again later!</h2>
+    </main>
+  </body>
+</html>
