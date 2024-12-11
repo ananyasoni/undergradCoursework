@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+  ***
+  Ananya Shreya Soni
+  March 36th 2024
+  Section AC TAs:
+
+  This a Productivity App Main View with a user's tasks for
+  the day displayed
+  ***
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    >
+    <script src="index.js"></script>
+    <title>Productivity Manager</title>
+  </head>
+  <body>
+    <header>
+      <h1>Productivity Manager</h1>
+    </header>
+    <h2>To-Do List</h2>
+    <section id="todos"></section>
+    <br>
+    <p>
+      Please enter your tasks in the box below along with the approximate time
+      required to complete the task:
+    </p>
+    <form id="form-input">
+      <input
+        type="text"
+        id="todo-input"
+        name="todo-input"
+        minlength="1"
+        placeholder="Input Next Task"
+        required
+      >
+      <br>
+      <input
+        type="number"
+        id="minutes"
+        name="minutes"
+        min="5"
+        placeholder="Approximate Time To Complete (min)"
+        required
+      >
+      <br>
+      <button id="submit">Submit</button>
+    </form>
+    <br>
+    <p>Options to Edit To-Do List:</p>
+    <button id="clear">Clear To-Do List</button>
+    <br>
+    <br>
+    <button id="order">Order To-Do List (asc)</button>
+  </body>
+</html>

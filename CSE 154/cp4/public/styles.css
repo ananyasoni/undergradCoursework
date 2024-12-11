@@ -1,0 +1,83 @@
+/*
+  Ananya Shreya Soni
+  March 29th, 2024
+  Section AC TA: Ramus
+
+  This file respresents the styling decisions for
+  my website. It is used for my resume page and
+  about me page. The color-theme is shades of purple.
+*/
+h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+body {
+  background-color: rgb(251, 240, 255);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+p {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+  height: 25px;
+  font-size: 15px;
+}
+
+button {
+  width: 150px;
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+#todos {
+  background-color: #e5d7f6;
+  padding: 10px;
+  border-radius: 15px;
+  white-space: break-space;
+}
+
+#todo-input, #minutes {
+  width: 65%;
+}
+
+header > h1, h2 {
+  text-align: center;
+  color: rgb(97, 23, 115);
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 25px;
+  font-family: "Pacifico", cursive;
+  font-weight: bold;
+}
+
+header > h1 {
+  text-decoration: none;
+  padding: 30px;
+  background-color: #d5c1ed;
+}
+
+main > section {
+  background-color: #e5d7f6;
+  padding: 30px;
+  border-radius: 15px;
+}
