@@ -1,0 +1,58 @@
+/*
+Name: Ananya Soni
+Date: April 12th 2014
+Section: CSE 154 AC
+This includes all the styling for the space.html
+website for the creative section.
+*/
+
+#creative p, ul {
+  font-size: 18pt;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#creative h3 {
+  font-size: 20pt;
+}
+
+#creative li {
+  margin-bottom: 20px;
+}
+
+#creative h2 {
+  font-size: 35pt;
+  text-decoration: underline;
+}
+
+#creative p, #creative h2, #creative h3 {
+  text-align: center;
+}
+
+#creative p, #creative h2, #creative h3, ul {
+  color: #E0DBD7;
+}
+
+#creative-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+#creative img {
+  height: 250px;
+  border-style: dashed;
+  border-color: antiquewhite;
+  border-width: 4px;
+}
+
+article {
+  padding: 35px;
+  background-color: #551756;
+  border-radius: 20px;
+  border: solid #E0DBD7;
+  margin-left: 10%;
+  margin-right: 10%;
+}
