@@ -1,0 +1,92 @@
+/*
+  Name: Ananya Shreya Soni
+  Date: June 1st, 2024
+  Section: CSE 154 AC
+
+  This CSS file styles the login and signup page of the stationary
+  e-commerce site. The color scheme is green like the rest
+  of the stationary eccomerce site.
+*/
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #e0f7e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+header h1 {
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+  color: #2e7d32;
+}
+
+button {
+  box-shadow: 2px 2px;
+  margin: 20px 0;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #a5d6a7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin-top: 20px;
+}
+
+label {
+  text-align: left;
+  color: #2e7d32;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+input {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #a5d6a7;
+  border-radius: 4px;
+  width: 80%;
+}
+
+#error {
+  background-color: #f3d5d8;
+  color: rgb(255, 47, 47);
+  padding: 20px 0;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}

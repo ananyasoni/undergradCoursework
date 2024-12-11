@@ -1,0 +1,41 @@
+<!--
+  Name: Ananya Shreya Soni
+  Date: April 19th, 2024
+  Section: CSE 154 AC
+  This HTML file provides the structure for the login and signup page
+  of the stationary e-commerce site. It includes forms for user
+  authentication and account creation.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Login / Signup</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <p id='error' class="hidden">
+      An error occurred - please try again!
+    </p>
+    <br>
+    <br>
+    <header>
+      <h1 id="h1">Log In</h1>
+      <h1 id="h2" class="hidden">Sign Up</h1>
+    </header>
+    <button id='sign-up-btn'>Sign Up</button>
+    <button class="hidden" id='sign-in-btn'>Sign In</button>
+    <form id="login-form">
+      <label>Username <input id='username' name="user" type='text'></label>
+      <label>Password <input id='password' name="password" type='password'></label>
+      <button id='sign-in'>Sign In</button>
+    </form>
+    <form class="hidden" id="sign-up-form">
+      <label>Username <input id='username-signup' name="user" type='text'></label>
+      <label>Password <input id='password-signup' name="password" type='password'></label>
+      <button id='sign-up'>Click To Sign Up</button>
+    </form>
+  </body>
+</html>

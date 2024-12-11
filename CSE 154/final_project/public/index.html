@@ -1,0 +1,112 @@
+<!--
+  Name: Ananya Shreya Soni
+  Date: April 19th, 2024
+  Section: CSE 154 AC
+
+  This HTML file represents the front-end structure of the
+  Stationary Pop Up Shop website. It includes a header,
+  navigation buttons, search form, product details section,
+  user purchase history section, etc.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  <script src="index.js"></script>
+  <title>Stationary Pop Up Shop</title>
+</head>
+<body>
+  <header>
+    <h1 class="page-title">Stationary Pop Up Shop</h1>
+  </header>
+  <section id="banner">
+    <button id="filter-btn" class="button">☰ Search</button>
+    <button id='home-btn' class="button">Home</button>
+    <button id="history-btn" class="button">View Purchase History</button>
+    <a class="button" href="login.html">Login / Signup</a>
+  </section>
+  <main>
+    <div id="side-panel" class="side-panel hidden">
+      <form id="filter-form">
+        <h3>Search by Price</h3>
+        <select name="priceFilter" id="price-filter">
+          <option value="none">none</option>
+          <option value="ASC">ascending</option>
+          <option value="DESC">descending</option>
+        </select>
+        <h3>Search by Category</h3>
+        <select name="category" id="category">
+          <option value="none">none</option>
+          <option value="pencil">pencil</option>
+          <option value="pen">pen</option>
+          <option value="notebook">notebooks</option>
+          <option value="storage">storage</option>
+          <option value="office-items">office-items</option>
+        </select>
+        <div class="search-container">
+          <input id="search" type="text" placeholder="Search..." name="search">
+        </div>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <div id="main-view">
+      <h3>🖋️ Pens:</h3>
+      <section id="pen"></section>
+      <br>
+      <h3>✏️ Pencils:</h3>
+      <section id="pencil"></section>
+      <br>
+      <h3>📒 Notebooks:</h3>
+      <section id="notebook"></section>
+      <br>
+      <h3>📦 Storage:</h3>
+      <section id="storage"></section>
+      <br>
+      <h3>💼 Office Items:</h3>
+      <section id="office-items"></section>
+      <br>
+      <h3>Others:</h3>
+      <section id="other"></section>
+    </div>
+    <br>
+
+    <div id="product-details" class="hidden"></div>
+    <div id="order-confirmation" class="hidden">
+      <h1>Confirm Order</h1>
+      <h2>You have decided to buy 1 unit of:</h2>
+      <h3>
+        Click Confirm to confirm your order and Cancel
+        to cancel your order. You will not be able to
+        change your order after confirming it.
+      </h3>
+      <h2></h2>
+      <button id="cancel-btn">Cancel</button>
+      <button id="confirm-btn">Confirm</button>
+    </div>
+    <div id="purchase" class="hidden">
+      <h2 id="unsuccesful-purchase" class="hidden">Sorry Item is Out of Stock 😭</h2>
+      <h1>Finalizing Purchase of Above Item</h1>
+      <button id="purchase-btn">Purchase Item</button>
+      <h2 id="purchase-status" class="hidden">Please Save the Order ID for your records:</h2>
+    </div>
+    <div class="hidden" id="purchase-history">
+      <h1>Your Purchase History:</h1>
+      <table id="purchase-table">
+        <thead>
+          <tr>
+            <th>Purchase ID</th>
+            <th>Item ID</th>
+            <th>Item Name</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+  <p>All Images and Content From amazon.com</p>
+</body>
+</html>

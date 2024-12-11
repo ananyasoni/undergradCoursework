@@ -1,0 +1,257 @@
+/*
+  Ananya Shreya Soni
+  May 4th, 2024
+
+  This file represents the main page styling for the
+  stationary ecommerce website. The color-scheme is
+  shades of green.
+*/
+
+body {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  background-color: #ecf4eb;
+}
+
+p {
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-size: 15pt;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header, .button, .button_hover {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+header > h1 {
+  color: #558350;
+}
+
+main > section {
+  background-color: #c5e5c2;
+  padding: 10px;
+  white-space: break-space;
+  text-align: left;
+}
+
+.items {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+#main-view > section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(152, 203, 152);
+}
+
+div > img {
+  width: 100px;
+  height: 100px;
+}
+
+#banner {
+  padding: 20px;
+  background-color: #c5e5c2;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#banner > input {
+  align-self: stretch;
+  margin-right: auto;
+}
+
+.button {
+  border: none;
+  background-color: #82b57d;
+}
+
+.button, .button_hover {
+  text-decoration: none;
+  padding: 9px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  background-position-y: top;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+}
+
+.button_hover {
+  background-color: #69ab69;
+  border: none;
+}
+
+.productCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  height: 400px;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.productCard img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  border-radius: 4px;
+}
+
+.productCard h2 {
+  font-size: 1.2em;
+  margin: 8px 0;
+  color: #333;
+  cursor: pointer;
+}
+
+.productCard h3 {
+  font-size: 1em;
+  color: #888;
+  margin: 8px 0;
+}
+
+.productCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#pencil, #pen, #notebook, #office-item, #storage {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hidden {
+  display: none;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productDetails img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.productDetails h2 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.productDetails h3 {
+  margin: 10px 0;
+  color: #666;
+}
+
+.productDetails .price {
+  color: #888;
+  margin: 10px 0;
+}
+
+.productDetails .stock {
+  color: #555;
+  margin: 10px;
+}
+
+.productDetails .rating {
+  font-size: 1.1em;
+  color: #444;
+  margin: 10px;
+}
+
+.productDetails p {
+  font-size: 1em;
+  color: #555;
+}
+
+.side-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #f4f4f4;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+  z-index: 1000;
+}
+
+.side-panel.active {
+  transform: translateX(0);
+}
+
+.side-panel h3 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.side-panel input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.side-panel button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #8dd19a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.side-panel button:hover {
+  background-color: #5aa56d;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
