@@ -264,20 +264,3 @@ For the creative section of this assignment, you may include additional images. 
   * You must cite any works that you use that you did not generate yourself (although technically you only need to cite things that are [CC: attribution](https://creativecommons.org/licenses/by/2.0/)).
   * A handy site for knowing how to add your citations is [here](https://wiki.creativecommons.org/wiki/Best_practices_for_attribution)
 * Examples of how to cite your sources in this class are [here](https://courses.cs.washington.edu/courses/cse154/24sp/resources/assets/code-examples/copyright-examples/copyrightexample2.html)
-
-## Academic Integrity
-All work submitted for your CSE 154 homework assignments must be your own and should not be shared with other students. This includes but is not limited to:
-  * You may not use code directly from any external sources (no copying and pasting from external sites), other than templates that are explicitly given to students for use in class.
-  * We expect that the homework you submit is your own work and that you do not receive any inappropriate help from other people or provide inappropriate help to others.
-  * You must not place your solution to a publicly-accessible web site, neither during nor after the school quarter is over.
-
-Doing any of the above is considered a violation of our course academic integrity policy. As a reminder this page states:
-
-  The Paul G Allen School has an entire page on
-  [Academic Misconduct](https://www.cs.washington.edu/academics/misconduct) within the context of
-  Computer Science, and the University of Washington has an entire page on how
-  [Academic Misconduct](https://www.washington.edu/cssc/for-students/academic-misconduct/) is
-  handled on their
-  [Community Standards and Student Conduct](https://www.washington.edu/cssc/) Page. Please acquaint
-  yourself with both of those pages, and in particular how academic misconduct will be reported to
-  the University.
