@@ -176,16 +176,3 @@ The grading distribution for this assignment will be broken down as follows (sub
 * External Correctness: 45-55%
 * Internal Correctness: 35-45%
 * Documentation: 5-10%
-
-## Academic Integrity
-All work submitted for your CSE 154 homework assignments must be your own and should not be shared with other students. This includes but is not limited to:
-  * You may not use code directly from any external sources (no copying and pasting from external sites), other than templates that are explicitly given to students for use in class.
-  * We expect that the homework you submit is your own work and that you do not receive any inappropriate help from other people or provide inappropriate help to others.
-  * You must not place your solution to a publicly-accessible web site, neither during nor after the school quarter is over.
-
-Doing any of the above is considered a violation of our course academic integrity policy. As a reminder this page states:
-
-  * The Paul G Allen School has an entire page on [Academic Misconduct](https://www.cs.washington.edu/academics/misconduct) within the context of Computer Science
-  * The University of Washington has an entire page on how [Academic Misconduct](https://www.washington.edu/cssc/for-students/academic-misconduct/) is handled on their [Community Standards and Student Conduct](https://www.washington.edu/cssc/) Page
-
-Please acquaint yourself with both of those pages, and in particular how academic misconduct will be reported to the University.
