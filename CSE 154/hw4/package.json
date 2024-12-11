@@ -1,0 +1,14 @@
+{
+  "name": "hw4-yipper-ananya99",
+  "version": "1.0.0",
+  "description": "*Special thanks to Tal Wolman for the original version of this assignment and to Robert Thompson for the original concept behind this assignment.*",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
