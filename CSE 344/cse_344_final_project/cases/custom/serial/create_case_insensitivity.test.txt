@@ -1,0 +1,22 @@
+# create_case_insensitivity.test.txt
+# Test user creation case insensitivity
+
+# commands to execute:
+create lower_case password123 500
+create LOWER_CASE newpassword 300
+create Lower_Case different_password 100
+create lOwEr_CaSe yet_another_password 200
+login lower_case password123
+login loweR_case password123
+quit
+*
+
+# expected output:
+Created user lower_case
+Failed to create user
+Failed to create user
+Failed to create user
+Logged in as lower_case
+User already logged in
+Goodbye
+*

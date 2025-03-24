@@ -1,0 +1,23 @@
+# Tests trying to pay for a non-existent reservation
+
+# commands to execute:
+create user1 pass1 500
+login user1 pass1
+search "Seattle WA" "Boston MA" 0 1 1
+book 0
+pay 1
+# non-existent reservation
+pay 2
+quit
+*
+
+# expected output:
+Created user user1
+Logged in as user1
+Itinerary 0: 1 flight(s), 297 minutes
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+Booked flight(s), reservation ID: 1
+Paid reservation: 1 remaining balance: 360
+Cannot find unpaid reservation 2 under user: user1
+Goodbye
+*

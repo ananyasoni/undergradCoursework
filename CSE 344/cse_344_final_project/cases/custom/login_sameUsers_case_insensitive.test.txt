@@ -1,0 +1,40 @@
+# Test login process when two sessions try to create an account with the same
+# username but with different case variations and log in concurrently. Both sessions
+# should be able to successfully login to the account but only 1 should be able to
+# successfully create the account
+
+# commands to execute in Terminal 1
+create testuser 123 1000
+login TESTUSER 123
+quit
+*
+
+# Scenario 1: Terminal 1 creates user first
+Created user testuser
+Logged in as testuser
+Goodbye
+|
+
+# Scenario 2: Terminal 2 creates user first
+Failed to create user
+Logged in as TestUser
+Goodbye
+*
+
+# commands to execute in Terminal 2
+create TestUser 123 1000
+login testuser 123
+quit
+*
+
+# Scenario 1: Terminal 1 creates user first
+Failed to create user
+Logged in as testuser
+Goodbye
+|
+
+# Scenario 2: Terminal 2 creates user first
+Created user TestUser
+Logged in as TestUser
+Goodbye
+*

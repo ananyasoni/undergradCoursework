@@ -1,0 +1,23 @@
+# login_case_insensitivity.test.txtTest
+# login with different case variations of
+# the username to test case login case insensitivity
+
+# commands to execute:
+create original_user password123 500
+login ORIGINAL_USER password123
+login ORIGINAL_USEr password123
+login ORIGInal_USEr password123
+login original_user password123
+login OriGiNaL_uSeR password123
+quit
+*
+
+# expected output:
+Created user original_user
+Logged in as original_user
+User already logged in
+User already logged in
+User already logged in
+User already logged in
+Goodbye
+*

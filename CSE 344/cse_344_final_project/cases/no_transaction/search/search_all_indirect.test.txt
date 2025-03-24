@@ -1,0 +1,41 @@
+# search_all_indirect.test.txt
+# Verify that all flights are indirect
+
+# commands to execute:
+search "Seattle WA" "Aberdeen SD" 0 1 10
+quit
+*
+
+# expected output:
+Itinerary 0: 2 flight(s), 236 minutes
+ID: 746985 Day: 1 Carrier: DL Number: 2314 Origin: Seattle WA Dest: Minneapolis MN Duration: 164 Capacity: 8 Price: 729
+ID: 981675 Day: 1 Carrier: OO Number: 7419 Origin: Minneapolis MN Dest: Aberdeen SD Duration: 72 Capacity: 7 Price: 394
+Itinerary 1: 2 flight(s), 238 minutes
+ID: 746985 Day: 1 Carrier: DL Number: 2314 Origin: Seattle WA Dest: Minneapolis MN Duration: 164 Capacity: 8 Price: 729
+ID: 931979 Day: 1 Carrier: OO Number: 7363 Origin: Minneapolis MN Dest: Aberdeen SD Duration: 74 Capacity: 19 Price: 677
+Itinerary 2: 2 flight(s), 244 minutes
+ID: 341841 Day: 1 Carrier: NW Number: 1928 Origin: Seattle WA Dest: Minneapolis MN Duration: 172 Capacity: 0 Price: 699
+ID: 981675 Day: 1 Carrier: OO Number: 7419 Origin: Minneapolis MN Dest: Aberdeen SD Duration: 72 Capacity: 7 Price: 394
+Itinerary 3: 2 flight(s), 246 minutes
+ID: 341841 Day: 1 Carrier: NW Number: 1928 Origin: Seattle WA Dest: Minneapolis MN Duration: 172 Capacity: 0 Price: 699
+ID: 931979 Day: 1 Carrier: OO Number: 7363 Origin: Minneapolis MN Dest: Aberdeen SD Duration: 74 Capacity: 19 Price: 677
+Itinerary 4: 2 flight(s), 246 minutes
+ID: 746977 Day: 1 Carrier: DL Number: 2308 Origin: Seattle WA Dest: Minneapolis MN Duration: 174 Capacity: 16 Price: 885
+ID: 981675 Day: 1 Carrier: OO Number: 7419 Origin: Minneapolis MN Dest: Aberdeen SD Duration: 72 Capacity: 7 Price: 394
+Itinerary 5: 2 flight(s), 247 minutes
+ID: 301304 Day: 1 Carrier: NW Number: 172 Origin: Seattle WA Dest: Minneapolis MN Duration: 175 Capacity: 17 Price: 908
+ID: 981675 Day: 1 Carrier: OO Number: 7419 Origin: Minneapolis MN Dest: Aberdeen SD Duration: 72 Capacity: 7 Price: 394
+Itinerary 6: 2 flight(s), 248 minutes
+ID: 744132 Day: 1 Carrier: DL Number: 1770 Origin: Seattle WA Dest: Minneapolis MN Duration: 176 Capacity: 1 Price: 300
+ID: 981675 Day: 1 Carrier: OO Number: 7419 Origin: Minneapolis MN Dest: Aberdeen SD Duration: 72 Capacity: 7 Price: 394
+Itinerary 7: 2 flight(s), 248 minutes
+ID: 746977 Day: 1 Carrier: DL Number: 2308 Origin: Seattle WA Dest: Minneapolis MN Duration: 174 Capacity: 16 Price: 885
+ID: 931979 Day: 1 Carrier: OO Number: 7363 Origin: Minneapolis MN Dest: Aberdeen SD Duration: 74 Capacity: 19 Price: 677
+Itinerary 8: 2 flight(s), 248 minutes
+ID: 747263 Day: 1 Carrier: DL Number: 2547 Origin: Seattle WA Dest: Minneapolis MN Duration: 176 Capacity: 11 Price: 485
+ID: 981675 Day: 1 Carrier: OO Number: 7419 Origin: Minneapolis MN Dest: Aberdeen SD Duration: 72 Capacity: 7 Price: 394
+Itinerary 9: 2 flight(s), 249 minutes
+ID: 301304 Day: 1 Carrier: NW Number: 172 Origin: Seattle WA Dest: Minneapolis MN Duration: 175 Capacity: 17 Price: 908
+ID: 931979 Day: 1 Carrier: OO Number: 7363 Origin: Minneapolis MN Dest: Aberdeen SD Duration: 74 Capacity: 19 Price: 677
+Goodbye
+*

@@ -1,0 +1,55 @@
+# Tests 2 users trying to book the same flight with enough capacity
+# Both bookings should succeed but with different reservation IDs
+
+# commands for user1 to execute in Terminal 1
+create user1 pass1 1000
+login user1 pass1
+search "Boston MA" "Seattle WA" 0 8 1
+book 0
+quit
+*
+
+# Scenario 1: user1 books first and gets reservation ID 1
+Created user user1
+Logged in as user1
+Itinerary 0: 1 flight(s), 347 minutes
+ID: 60492 Day: 8 Carrier: AS Number: 25 Origin: Boston MA Dest: Seattle WA Duration: 347 Capacity: 19 Price: 881
+Booked flight(s), reservation ID: 1
+Goodbye
+|
+
+# Scenario 2: user2 books first and user1 gets reservation ID 2
+Created user user1
+Logged in as user1
+Itinerary 0: 1 flight(s), 347 minutes
+ID: 60492 Day: 8 Carrier: AS Number: 25 Origin: Boston MA Dest: Seattle WA Duration: 347 Capacity: 19 Price: 881
+Booked flight(s), reservation ID: 2
+Goodbye
+*
+
+
+# commands for user2 to execute in Terminal 2
+create user2 pass2 1000
+login user2 pass2
+search "Boston MA" "Seattle WA" 0 8 1
+book 0
+quit
+*
+
+# Scenario 1: user1 books first and user2 gets reservation ID 2
+Created user user2
+Logged in as user2
+Itinerary 0: 1 flight(s), 347 minutes
+ID: 60492 Day: 8 Carrier: AS Number: 25 Origin: Boston MA Dest: Seattle WA Duration: 347 Capacity: 19 Price: 881
+Booked flight(s), reservation ID: 2
+Goodbye
+|
+
+# Scenario 2: user2 books first and gets reservation ID 1
+Created user user2
+Logged in as user2
+Itinerary 0: 1 flight(s), 347 minutes
+ID: 60492 Day: 8 Carrier: AS Number: 25 Origin: Boston MA Dest: Seattle WA Duration: 347 Capacity: 19 Price: 881
+Booked flight(s), reservation ID: 1
+Goodbye
+*
