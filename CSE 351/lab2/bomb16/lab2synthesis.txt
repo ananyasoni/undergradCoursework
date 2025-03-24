@@ -1,0 +1,45 @@
+*****************************
+* Lab 2 Synthesis Questions *
+*****************************
+Name(s): Ananya Shreya Soni
+NetID(s): ananya99
+
+
+-----------------------------------------------------------
+1) &value:12 bytes
+   &array:16 bytes
+-----------------------------------------------------------
+2) Init:   <fillArray+48>
+   Update: <fillArray+146>
+-----------------------------------------------------------
+3) String address:0x4020a2
+   Part of memory:literals
+   Assembly instruction address: <parts_2+8>
+-----------------------------------------------------------
+4) Strategy + example:
+The most useful assembly tracing strategy I used was tracking
+the state of the register using <layout regs>. Whenever I
+encountered a function call or complex recursive logic, I
+carefully kept track of what each register stored,
+as well as the changes they underwent during each
+step of the function execution. I recommend keeping
+a notebook to write down the purpose of each of the registers
+used. This strategy was particularly useful to me during phase
+4, where I had to trace the recursive calls in the func4 assembly.
+By writing out the state of %eax, %ebp, and %edi for each recursive
+call, I could more easily visualize how the return values
+propagated back up the stack and matched the desired result.
+
+-----------------------------------------------------------
+5) Difficulty + why (past experience):
+The most difficult aspect of x86-64 assembly for me was understanding the
+indirect memory addressing and pointer arithmetic, particularly with how
+offsets were calculated and used with instructions like lea and movzbl.
+This was especially confusing when dealing with arrays in part 5, as it
+required  me to interpret memory layout, base addresses, and indexing all
+without a high-level view of the data structure. I believe this difficulty
+stemmed from my limited exposure to low-level programming before this course.
+Coming from a background primarily focused on high-level languages like Java,
+memory management and addressing were concepts that were abstracted away.
+-----------------------------------------------------------
+

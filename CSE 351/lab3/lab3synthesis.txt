@@ -1,0 +1,56 @@
+*****************************
+* Lab 3 Synthesis Questions *
+*****************************
+Name(s): Ananya Shreya Soni
+NetID(s): ananya 99
+
+Examine the contents of memory in GDB to figure out what happened and answer the following questions:
+-----------------------------------------------------------
+1) Explain: In your own words, explain the cause of this specific segmentation fault.
+
+What value gets corrupted and why does it cause the segmentation fault?
+
+- We're overwriting the return address that the function needs to get back to its caller.
+  The return address stored in memory gets overwritten when fill_array writes beyond the allocated array. This
+  causes a segmentation fault because the program tries to access memory that it does not have permission to access.
+  Specifically, in fill_array, the loop writes beyond the allocated array space, which corrupts the stack. When part_2 tries to
+  return, it attempts to jump to this corrupted address. The corrupted return address is invalid (it's been overwritten with the array
+  data), so when the function tries to return, it can't jump to that invalid address, causing the segmentation fault.
+
+Which assembly instruction causes the segmentation fault to occur at the moment it is executed? (Be specific: give the name of the
+instruction as well as the name of the function where it is found.) [3 pt]
+
+- The segmentation fault happens when the program attempts to return to an invalid address in the stack.
+  The problematic instruction is therefore: "ret" in part_2 which causes the program to attempt to jump to an invalid memory address.
+
+
+-----------------------------------------------------------
+2) Minimum length to cause a seg fault: It turns out that you can figure out when you will get a segfault in part_2 just by
+   looking at the assembly code! There are a few instructions that contribute to determining the limit on the second argument
+   to fill_array. What is the minimum length needed to cause a segmentation fault? (Please briefly explain the calculation
+   you did to find the minimum length.) [2 pt]
+
+   - The minimum length needed to cause a segmentation fault is 15.
+
+   Calculation:
+   - The instruction sub $0x48, %rsp reserves 72 bytes of stack space. The array starts at 0x7fffffffe0a0, which is 16 bytes
+     (0x10) into this allocated space. Each integer (int) is 4 bytes in size so the array, which is of length 10, ends at 0x7fffffffe0c8.
+     At len = 14: 14 * 4 = 56 bytes are written. 56 + 16 = 72, which exactly fits within the allocated 72 bytes. At len = 15:
+     15 * 4 = 60 bytes are written. 60 + 16 = 76, which exceeds the allocated 72 bytes, overwriting memory. Therefore the minimum
+     length needed to cause a segmentation fault is 15.
+-----------------------------------------------------------
+3) Hacker Reflection: What point in the lab made you "feel like a hacker" the most? Did it feel exciting, concerning,
+   or something else and why?  [2 pt]
+   The moment that made me “feel like a hacker” the most was figuring out the exact location where the return address got overwritten.
+   Watching how modifying just a few bytes can change a program’s execution felt both exciting and a bit concerning. I think its really
+   cool how low-level memory manipulation can alter control flow and potentially lead to  many exploits.
+
+
+-----------------------------------------------------------
+4) Vulnerabilities and Security: How does realizing your ability to exploit these vulnerabilities affect the way you
+   view computer security?  [2 pt]
+   It makes me realize the importance of computer security. This lab has taught me that buffer overflows are a real and dangerous security risk.
+   Seeing firsthand how easy it is to overwrite important stack data reinforces why modern systems use protections to prevent this type of attack
+   from occuring. It also makes me more cautious about writing secure code—especially when handling user input.
+
+-----------------------------------------------------------

@@ -1,0 +1,22 @@
+*****************************
+* Lab 5 Synthesis Questions *
+*****************************
+Name(s): Ananya Shreya Soni
+NetID(s): ananya99
+
+
+-----------------------------------------------------------
+1) Alignment: 16 bytes
+   Reasoning: From the output after allocating various sized blocks, I observed that all memory addresses
+   (both the first_block and class_grades) are aligned to 16-byte boundaries because they end with 0 in
+   hexadecimal. There is also a consistent 32-byte difference for allocations between 0-24 bytes which
+   indicates that blocks are allocated in multiples of 16 bytes. Since the total size of the block is always
+   a multiple of 16, ie: 32, 48, 64, etc., the alignment is 16 bytes.
+
+-----------------------------------------------------------
+2) Boundary Tag Size: 8 bytes
+   Reasoning: For allocations between 0-24 bytes, the total block size remains consistently 32 bytes.
+   When allocating 24 bytes (the maximum payload that fits in this block size), the difference is still
+   32 bytes. This means the overhead is 32 - 24 = 8 bytes, which represents the boundary tag size.
+   This 8-byte overhead remains constant across different allocation sizes.
+-----------------------------------------------------------

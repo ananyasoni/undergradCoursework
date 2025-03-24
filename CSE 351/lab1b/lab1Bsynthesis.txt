@@ -1,0 +1,67 @@
+******************************
+* Lab 1b Synthesis Questions *
+******************************
+Name(s): Ananya Shreya Soni
+NetID(s): ananya99
+
+-----------------------------------------------------------
+Data representation: Your friend suggests an alternative data representation for sections in an aisle.
+In this representation, the lowest 8 bits would use unsigned integer encoding to represent the number
+of items in a section, and the upper 8 bits would be used to store a unique item id. [4 pt]
+- Compared to our current representation, give two benefits and one drawback of this new representation.
+- If you were the store manager, which representation would you prefer to use? Briefly justify your choice.
+
+1) Benefit 1: The alternative implementation makes it easier and more efficient to count and
+   update the number of items in each section in an aisle. This eliminates the need to count bits in
+   the section to determine the number of items in each section making it easier to implement
+   functions like num_items().
+
+   Benefit 2: The alternative implementation allows for more efficient use of space. And a user
+   is able to add more than 10 items to a section. For instance, there could be realistically
+   be some sections in the aisles of a store that fit more items than others.
+
+   Drawback: A drawback of the alternative implementation is that it reduces flexibility and
+   granularity of the aisle representation. The new representation would no longer track
+   where items are located and whether each location is occupied or empty. It would no
+   longer be possible to add items to specific places or toggle individual spaces.
+
+   Store manager preference w/ justification: As a store manager, I would prefer the
+   original representation to the alternative representation due to the drawback mentioned above.
+   The original implementation is preferable because it provides control over individual
+   spaces in a section and provides more detail about the placement of items.
+
+-----------------------------------------------------------
+Number representation: Consider the following two statements
+(noting that the type of y is purposefully omitted):
+- y = -1;
+- y = 0xFFFFFFFF;
+Is there a difference between using these two statements
+in your code? Explain. If there is a difference, make sure
+to provide an example.  [2 pt]
+
+2) Difference? N
+
+   Explain: There is no difference between the two because if y is of
+   type signed int then the hex representation of the first statement matches
+   the second statement (ie: both = 0xFFFFFFFF which means negative 1 due to two's complement).
+   If y is of unsigned int type then assigning -1 results in an overflow, and y becomes the
+   largest possible value for the unsigned int type which is 0xFFFFFFFF which is equal to
+   the value in the second statement. Hence there is not a difference between using these
+   two statements.
+
+-----------------------------------------------------------
+Floating point: Explain why comparing two floating point numbers with == or != is problematic.
+The suggested equality alternative from lecture involved comparing the difference against a
+threshold value: what should be considered in choosing such a threshold?
+
+3) Explain: We should not compare two floating point numbers with == or != due to lack of precision.
+Since floating points are stored using a finite number of bits many decimal numbers cannot be represented exactly
+for example 0.1 and simple arithmetic operations can cause rounding errors, additioally the same
+mathematical operations permormed in slightly different orders can result in different floating points.
+Therefore we should use a threshold when comparing floating points with each other to account for error.
+
+   Considerations: Precision should be a consideration when choosing threshold. For high precision
+   a smaller threshold should be used. Another consideration is the magnitude. Larger numbers
+   typically have larger absolute errors which means a larger threshold should be used for larger
+   numbers.
+

@@ -1,0 +1,48 @@
+******************************
+* Lab 1a Synthesis Questions *
+******************************
+Name: Ananya Soni
+NetID: ananya99
+
+
+-----------------------------------------------------------
+1) Considering how you calculated the actual difference (in bytes)
+between two addresses in C without any compiler warnings,
+briefly explain why each step was necessary.
+
+I first cast each pointer to (char*) ie: a pointer of type char.
+This step was necessary because a char has a size of 1 byte as
+opposed to something like an int which is 4 bytes. This ensured
+that in the next step when I did pointer arithmetic to find
+the difference between pointer 1 and pointer 2 by subtracting
+pointer 2 by pointer 1 we got the actual number of bytes between
+both pointers intead of having to divide by the size of the type
+of the pointer to intead get the number of elements of a
+particular type between two pointers.
+
+
+-----------------------------------------------------------
+2) Explain why the parameters to the function swap_ints must both be pointers.
+What would happen if the parameters were integers?
+
+The parameters should both be pointers because in order to manipulate
+the data referenced by both the pointers we actually need the address
+in memory where that data is located, hence why we need the pointers.
+If the parameters were just integers then when swapping the ints passed
+as parameters we would only be changing the local copies of the variables
+and would not actually swap the original integers referenced by the pointers.
+
+
+-----------------------------------------------------------
+3) The Intro series at the Allen School uses Java, which leaves out the concept
+of pointers among other "low-level" language features. How do you think this has
+impacted your entry into computer science and programming? Name at least one positive
+impact and at least one drawback/limitation and justify all of your answers.
+
+A positive impact is that it has allowed us to learn fundamental programming
+constructs and concepts such as OOP without being bogged down with lower level details,
+essentially allowing us to abstract those lower level details. A drawback though is that
+we didn't have a solid understanding of how memory is actually stored in our computer
+and took things like the Java Garbage Collector for granted.
+
+

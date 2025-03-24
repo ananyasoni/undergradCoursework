@@ -1,0 +1,10 @@
+int int_size();
+int double_size();
+int pointer_size();
+int change_value();
+int within_same_block(int *, int *);
+int within_array(int *, int, int *);
+void swap_ints(int *, int *);
+int string_length(char *);
+int endian_experiment(int*);
+void selection_sort(int *, int);

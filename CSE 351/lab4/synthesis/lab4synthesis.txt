@@ -1,0 +1,92 @@
+*****************************
+* Lab 4 Synthesis Questions *
+*****************************
+Name(s): Ananya Shreya Soni
+NetID(s): ananya99
+-----------------------------------------------------------
+In part_4, the nested loops come between the calls to clock()
+(callq <clock@plt> in the assembly). How many of the assembly
+instructions in the nested loops access (read or write to) memory?
+Provide the count and list of instructions for both the unoptimized
+and optimized code. For the lists of instructions, you can either copy
+and paste the instructions or include the relative address of each instruction
+(<func+##>).[2 pt] Only count each instruction once; ignore the looping mechanics
+and multiple accesses in a single instruction. nop* is a family of instructions
+that do nothing (i.e., they don't access memory). Don't count the instructions
+found in big_array_index, but the callq <big_array_index> instruction is part of
+the nested loops. Only count the number of data accesses caused by the execution
+of the instructions and not by their retrieval.
+1) Instructions in the nested loops that access memory
+   lab0.d: 17
+   List of instructions for lab0.d:
+   -  movl    $0x0,-0x14(%rbp)
+   -  movl    $0x0,-0x18(%rbp)
+   -  movl    $0x0,-0x1c(%rbp)
+   -  mov     -0x14(%rbp),%edx
+   -  mov     -0x18(%rbp),%eax
+   -  mov     -0x1c(%rbp),%edx
+   -  mov     -0x18(%rbp),%ecx
+   -  mov     -0x14(%rbp),%eax
+   -  mov     -0x28(%rbp),%rax
+   -  mov     -0x1c(%rbp),%edx
+   -  mov     %edx,(%rax)
+   -  addl    $0x1,-0x1c(%rbp)
+   -  cmpl    $0x1f3,-0x1c(%rbp)
+   -  addl    $0x1,-0x18(%rbp)
+   -  cmpl    $0x1f3,-0x18(%rbp)
+   -  addl    $0x1,-0x14(%rbp)
+   -  cmpl    $0x1f3,-0x14(%rbp)
+
+
+   lab0opt.d: 1
+   List of instructions for lab0opt.d:
+   - mov %ecx,(%rsi,%rdx,4)
+
+The optimized code has significantly fewer memory accesses than the unoptimized
+-----------------------------------------------------------
+In the unoptimized code, where are the loop variables i, j, and k "stored?"
+Give the corresponding assembly operands (e.g., %r8, 2(%rax)) and not addresses. [3 pt]
+2) Where are the loop variables stored in lab0.d:
+   i: -0x14(%rbp)
+   j: -0x18(%rbp)
+   k: -0x1c(%rbp)
+-----------------------------------------------------------
+In the optimized code, the loop variables have sort of disappeared! Name what
+the values found in registers %edx and %rcx correspond to in the C code. [2 pt]
+3) Corresponding values in lab0opt.d:
+   %edx: corresponds to the innermost loop variable 'k' because it is incremented
+         inside the innermost loop (add $0x1, %rdx) and compared against
+         0x1f4 (cmp $0x1f4, %rdx).
+   %ecx: corresponds to the calculated value that is written to memory, which in the C code
+         is 'i + j + k' (the result of adding all loop variables)
+         (bigArray[bigArrayIndex(i, j, k)] = i + j + k;)
+-----------------------------------------------------------
+Take a look at your transpose code for the 32 x 32 matrix. If the starting address of matrix A did
+not map to the beginning of a cache block, how would the number of misses be affected? (Increase /
+Stay the Same / Decrease) Briefly explain. [2 pt]
+4) Effect on number of misses: Increase
+
+   Explain: If the starting address of matrix A did not map to the beginning of a cache block, it would
+   cause misalignment with respect to the cache blocks. Since my transpose code relies on 8×8 blocking,
+   it assumes that cache blocks align well with these submatrices, minimizing conflict misses. If A starts
+   at an arbitrary memory location instead that does not map to the beginning of a cache block then the
+   cache blocks storing A's rows would not align with those used for B's columns. Each row access might also
+   span multiple cache blocks instead of fitting neatly into one. This would also cause more cache lines
+   to be loaded than necessary,leading to an increase in cache misses when accessing elements in a block.
+-----------------------------------------------------------
+Take a look at your transpose code for the 64 x 64 matrix. If
+you were to run this code for a matrix of size 57 x 71,
+how would the number of misses be affected? (Increase /
+Stay the Same / Decrease) Briefly explain.  [2 pt]
+You don’t need to modify your code to work with this matrix size.
+Use what you know about cache images to answer this
+5) Effect on number of misses: Increase
+
+   Explain: If I were to run this code for a matrix of size 57 x 71 then the number
+   of cache misses would increase because 57 and 71 are not multiples of 4, the last few
+   partial blocks would not align neatly with the cache-friendly access pattern, which
+   would introduce additional misses. For 57×71, misaligned memory accesses can lead
+   to more cache evictions due to less effective use of spatial locality.
+   Additionally, the non-power-of-2 dimensions would also cause more cache
+   conflicts since the rows won't align neatly within cache lines.
+-----------------------------------------------------------
