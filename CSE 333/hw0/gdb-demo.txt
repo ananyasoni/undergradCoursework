@@ -1,0 +1,54 @@
+Script started on 2025-04-02 22:36:31-07:00 [TERM="xterm-256color" TTY="/dev/pts/32" COLUMNS="165" LINES="17"]
+[35;1mGNU gdb (Rocky Linux) 14.2-3.el9[m
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <[32mhttp://gnu.org/licenses/gpl.html[m>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+[32m<https://www.gnu.org/software/gdb/bugs/>[m.
+Find the GDB manual and other documentation resources online at:
+    <[32mhttp://www.gnu.org/software/gdb/documentation/[m>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32m./hello_world[m...
+[?2004h(gdb) break 18
+[?2004l
+Breakpoint 1 at [34m0x401143[m: file [32mhello_world.c[m, line 18.
+[?2004h(gdb) run
+[?2004l
+Starting program: [32m/homes/iws/ananya99/cse333-25sp-ananya99/hw0/hello_world[m 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+
+Breakpoint 1, [33mmain[m ([36margc[m=1, [36margv[m=0x7fffffffdc28) at [32mhello_world.c[m:18
+18	  [01mprintf[m[31m([m[31m"The magic word is: %X[m[35m\n[m[31m"[m[31m,[m a [31m+[m b[31m);[m
+[?2004hMissing separate debuginfos, use: dnf debuginfo-install glibc-2.34-125.el9_5.3.x86_64
+[?2004l
+[?2004h(gdb) print argv[0]
+[?2004l
+$1 = [34m0x7fffffffdf23[m "/homes/iws/ananya99/cse333-25sp-ananya99/hw0/hello_world"
+[?2004h(gdb) print a
+[?2004l
+$2 = -889262067
+[?2004h(gdb) print /x a
+[?2004l
+$3 = 0xcafef00d
+[?2004h(gdb) print a+b
+[?2004l
+$4 = -559038737
+[?2004h(gdb) backtrace
+[?2004l
+#0  [33mmain[m ([36margc[m=1, [36margv[m=0x7fffffffdc28) at [32mhello_world.c[m:18
+[?2004h(gdb) continue
+[?2004l
+Continuing.
+The magic word is: DEADBEEF
+[Inferior 1 (process 513136) exited normally]
+[?2004h[?2004l
+[?2004h(gdb) quit
+[?2004l
+Script done on 2025-04-02 22:37:09-07:00 [COMMAND_EXIT_CODE="0"]
