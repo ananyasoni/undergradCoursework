@@ -3,9 +3,9 @@
 UW CS Undergraduate Computer Science Coursework
 
 ## Courses:
-- CSE 163 (Python)
-- CSE 446 (Python, LaTeX)
-- CSE 333 (C, C++)
+- CSE 163 (Intermediate Data Programming) (Python)
+- CSE 446 (Machine Learning) (Python, LaTeX)
+- CSE 333 (Systems Programming) (C, C++)
 - CSE 344 (Introduction to Data Management) (SQL, Postgres, Java)
 - CSE 421 (Introduction to Algorithms)
 - CSE 351 (The Hardware/Software Interface) (C, Assembly x86-64)
